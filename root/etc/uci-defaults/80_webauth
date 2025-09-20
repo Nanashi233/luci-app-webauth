@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Add webauth to ucitrack for service management
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@webauth[-1]
+	add ucitrack webauth
+	set ucitrack.@webauth[-1].init=webauth
+	commit ucitrack
+EOF
+
+return 0

@@ -1,0 +1,29 @@
+{
+	"admin/services/webauth": {
+		"title": "Web Authentication",
+		"order": 60,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-app-webauth" ],
+			"uci": { "webauth": true }
+		}
+	},
+	"admin/services/webauth/setting": {
+		"title": "Settings",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "webauth/setting"
+		}
+	},
+	"admin/services/webauth/log": {
+		"title": "Logs",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "webauth/log"
+		}
+	}
+}

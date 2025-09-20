@@ -1,0 +1,7 @@
+config webauth 'settings'
+	option enabled '0'
+	option account ''
+	option password ''
+	option service 'default'
+	option queryString ''
+	option interface 'wan'

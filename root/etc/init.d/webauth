@@ -1,0 +1,16 @@
+#!/bin/bash
+
+script_path="/usr/share/luci-app-webauth/login.sh"
+
+start() {
+   echo "Starting myservice..."
+   # 启动服务的命令
+}
+stop() {
+   echo "Stopping myservice..."
+   # 停止服务的命令
+}
+restart() {
+   stop
+   start
+}
